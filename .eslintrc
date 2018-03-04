@@ -1,0 +1,27 @@
+{
+  "extends": ["airbnb"],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    //"semi": ["error", "always"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    // TODO - only for debug
+    "no-console": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "globals": {
+    "web3": false
+  },
+  "parser": "babel-eslint"
+}
